@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="keywords" content="ネームサーバー設定,DNS設定,変更,ネームサーバー,DNS">
+
+<title>ネームサーバー設定の方法・各社のDNSアドレスまとめ</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="style-iphone.css" />
+<link rel="canonical" href="dns.html" />
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- Google tag (gtag.js) -->
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="index.html"><img src="img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="index.html"><img src="img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  
+
+<div class="pc_only">
+<nav id="navigation">
+    	<ul id="menu">
+				<li><a href="domain/index.html"><img src="img/navi_domain.png" height="40px" width="50px"><br><b>独自ドメイン</b><span>8社比較</span></a></li>
+				<li><a href="server/index.html"><img src="img/navi_server.png" height="40px" width="40px"><br><b>レンタルサーバー</b><span>17社比較</span></a></li>
+				<li><a href="wordpress/index.html"><img src="img/23003969.png" height="40px" width="60px"><br><b>ワードプレス</b><span>作り方＆使い方</span></a></li>
+				<li><a href="ec/index.html"><img src="img/navi_ec.png" height="40px" width="40px"><br><b>ECサイト構築</b><span>ASP比較</span></a></li>
+				<li><a href="website-builder/index.html"><img src="img/navi_homepage.png" height="40px" width="40px"><br><b>ウェブサイトビルダー</b><span>簡易Web作成ツール</span></a></li>
+
+			</ul>   
+</nav>
+</div>
+
+
+<div class="mobile_only">
+<nav id="navigation2">
+    	<ul id="menu">
+				<li><a href="domain/index.html"><img src="img/navi_domain.png" height="40px" width="50px"><br><b>独自ドメイン</b></a></li>
+				<li><a href="server/index.html"><img src="img/navi_server.png" height="40px" width="40px"><br><b>レンタル<br>サーバー</b></a></li>
+				<li><a href="wordpress/index.html"><img src="img/23003969.png" height="40px" width="60px"><br><b>ワードプレス</b></a></li>
+				<li><a href="mail/index.html"><img src="img/navi_mail.jpg" height="40px" width="50px"><br><b>メールアドレス</b></a></li>
+				<li><a href="website-builder/index.html"><img src="img/navi_homepage.png" height="50px" width="50px"><br><b>ウェブサイトビルダー</b></a></li>
+				<li><a href="ec/index.html"><img src="img/navi_ec.png" height="50px" width="50px"><br><b>ECサイト構築</b></a></li>
+				<li><a href="about/index.html"><img src="img/navi_app2.png" height="40px" width="40px"><br><b>キーワード解説</b></a></li>
+				<li><a href="blog/index.html"><img src="img/22962015.png" height="40px" width="40px"><br><b>ブログ</b></a></li>
+			</ul>   
+</nav>
+</div>
+
+<div id="panlist">
+<ul>
+<li><a href="index.html" title="ドメイン取得への道！">Topページに戻る</a> ＞</li>
+<li><a href="dns.html">ネームサーバー設定</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+<h1><span class="aka">【かんたん解説】</span>難しいネームサーバー設定をわかりやすく解説</h1>
+
+
+<div class="themebox t25">
+<ol>
+<li><a href="#settei">設定方法の解説</a></li>
+<li><a href="#ip">DNS設定（各社まとめ）</a></li>
+<li><a href="#kakusya">設定をボタン操作だけで簡単に行う方法</a></li>
+</ol>
+</div>
+
+
+<h3 id="settei">わかると意外にかんたんなネームサーバー設定</h3>
+
+<p>
+ネームサーバー設定と聞くと、とても難しそうに思えてしまう方も多いのではないでしょうか。
+私もホームページ作成をした当初はまったく意味がわかりませんでした。
+</p>
+
+<p>
+しかし、ネームサーバー設定はわずか2つだけで完了します。
+</p>
+
+<ul class="nasi>
+<li><span class="aka">「借りているレンタルサーバーのサーバーIPアドレス（又はドメイン名）を調べてコピペする」</span></li>
+<li><span class="aka">「ドメイン側のネームサーバー設定画面でそれを貼り付ける」</span></li>
+</ul>
+
+<p>
+ネームサーバー設定で難しいと感じる点があるとすると「エックスサーバーで借りているけど、エックスサーバーのIPアドレスはどこで調べればいいのか」と
+いう点ではないでしょうか。
+</p>
+
+<p>
+自分が借りているレンタルサーバー会社のサーバーIPアドレス（ドメイン名）は、意外にパッと出てきません。
+</p>
+
+<p>
+レンタルサーバー会社よって、（１）管理画面で調べられる会社（２）加入時の契約メールに記入されている会社、の2つに別れます。
+</p>
+
+<p>
+このどちらかの方法で調べてもわからない時には、
+マニュアルや検索エンジン経由で「エックスサーバー ネームサーバー」といったキーワードを入れて調べましょう。
+</p>
+
+<p>
+当ページでは<a href="#ip">各社のIPアドレス（ネームサーバー名）を表示まとめています</a>。
+</p>
+
+
+
+<p>
+慣れるとネームサーバー設定は数分で行えます。
+設定後に反映するまでの待ち時間も含めて、速ければ１時間～数時間ほどでネームサーバー設定は完了します。
+</p>
+
+
+<p>
+では、実際に設定する方法を解説します。
+</p>
+
+
+<h3>準備１．ドメイン会社のネームサーバー設定画面を開く</h3>
+
+<p>
+まずは、大手ドメイン会社である「お名前.com」におけるネームサーバー設定（DNS設定）の方法を説明します。
+</p>
+
+<p>
+「お名前.com」のサイトからID・パスワードを入力して管理画面にログインをします。
+管理画面が出てきたら「ドメイン設定」＞「ネームサーバーの変更」をクリックしてみましょう。
+</p>
+
+<p>
+次の画像の画面に切り替わりますので、「他のネームサーバーを利用」をさらに選択します。
+するとネームサーバー情報（IPアドレス・アドレス名）を入れられる画面に遷移します。
+</p>
+
+<p>
+まず、この画面まで行くことが準備１になります。
+</p>
+
+
+<p class="center">
+<span class="futozi">「お名前.com」ネームサーバー設定画面</span>
+<img src="image/onamae-dns2.png" alt="お名前.comのネームサーバー設定画面">
+</p>
+
+
+
+<h3>準備２．レンタルサーバーのIPアドレス（ドメイン名）を入力する</h3>
+
+<p>
+設定画面まで辿り着いたら、「1プライマリネームサーバー」「2セカンダリネームサーバー」のところに
+登録するレンタルサーバー各社のドメイン名を入力します。
+</p>
+
+<p class="center">
+<span class="futozi">レンタルサーバーのドメイン名を入力する</span>
+<img src="img/onamae-dns3.png" width="500" alt="プライマリネームサーバー">
+</p>
+
+
+<p>
+ここで問題になるのが「レンタルサーバーのドメイン名はどこから持ってくるのか？」という点になります。
+</p>
+
+<p>
+先程、説明したように調べておくか、当ページ後半にある
+<a href="#ip">各レンタルサーバーのドメイン名まとめ表</a>から引っ張ってきましょう。
+</p>
+
+<p>
+ドメイン名は各会社ごとに共通しているものなので、
+このまとめ表をコピペしてもらって設定をして頂いて大丈夫だと思います。
+</p>
+
+
+
+<h5>ドメイン名は基本的に2行入力すればＯＫ</h5>
+
+<p>
+次の画像を見てもらうとわかりように、ネームサーバー情報を入力する箇所が合計で5行あります。
+画像ではエックスサーバーのドメイン名を5行分入力していますが、
+基本的には「プライマリ」と「セカンダリ」の2行だけ追加すれば問題ありません。
+</p>
+
+<p>
+そしてドメイン名を入力して、確認画面で「設定する」などにＯＫをクリックすれば
+ネームサーバー設定は完了します。
+</p>
+
+
+
+
+<h3>準備３．ドメイン登録も行っておく</h3>
+
+<p>
+ネームサーバーの変更は以上だけでＯＫになります。
+この作業はドメイン会社の管理画面で行います。
+</p>
+
+<p>
+一方で、レンタルサーバー側の管理画面でも行うことがあります。
+それが「独自ドメインの登録」になります。
+</p>
+
+<p>
+エックスサーバーの管理画面を例にとって説明してみたいと思います。
+まず、管理画面に入ったら「ドメイン設定」を選択してください。
+</p>
+
+
+<p class="center">
+<span class="futozi">エックスサーバーの管理画面</span>
+<img src="img/xserver-domaintouroku001.png" width="500" alt="エックスサーバーでドメイン登録">
+</p>
+
+
+<p>
+「ドメイン設定」の画面に遷移したら、「ドメイン設定追加」をさらに選択します。
+</p>
+
+<p>
+そこで独自ドメインを設定しましょう。
+</p>
+
+
+<p>
+このように、独自ドメインを契約したらレンタルサーバー側で「ドメイン登録」を行わないといけません。
+</p>
+
+
+
+<p class="center">
+<span class="futozi">独自ドメインを登録する</span>
+<img src="img/xserver-domaintouroku002.png" width="500" alt="エックスサーバーでドメイン登録">
+</p>
+
+
+<p>
+ドメイン設定はネームサーバー設定と違い、時間がかからずすぐに反映されます。
+</p>
+
+
+
+<h4>ネームサーバー設定後の待ち時間は数時間</h4>
+
+
+<p>
+「ネームサーバーの設定も終わったけれども、なかなか画面が反映されない・・・」
+</p>
+
+
+<p>
+「お名前.com」でネームサーバー設定を「ＣＰＩ」から「エックスサーバー」に切り替えたとします。
+この時に設定後すぐ切り替わるかというとそうではありません。
+</p>
+
+<p>
+おおくのドメイン会社では「設定の反映完了まで25時間から72時間程度かかる場合があります」と記載されています。
+</p>
+
+<p>
+そのため、設定後に3日待ってしまう方も多いと思いますが、
+だいたい私の経験では設定変更して1時間～3時間もたてば、ネームサーバーの反映がおわってホームページが表示されるケースがほとんどです。
+</p>
+
+<p>
+どれだけ時間がかかっても、まず半日もかかりません。
+半日待っても画面が表示されないようであれば、なにか設定がおかしいのか調べ直してみたほうがいいかもしれません。
+</p>
+
+
+
+
+<h5>設定してもホームぺージが表示されないとき</h5>
+
+<p>
+3時間たっても設定が完了しない、画面が表示されないといった場合は、
+</p>
+
+<p>
+（１）DNS設定の再確認<br>
+（２）レンタルサーバー側でドメイン登録が終わっているか<br>
+（３）ワードプレス簡単インストール設定のどこか
+</p>
+
+<p>
+に間違いがないかを検証しましょう。
+</p>
+
+<p>
+まれに、Whois情報の設定間違いで表示が止まっていることもあります。
+ドメイン会社から「Whois情報を誤表記している」とメールが来ていないかも確認しましょう。
+</p>
+
+
+<h5>設定が正しいか設定チェックツールで確認しよう</h5>
+
+<p>
+取得しているドメインのネームサーバーがどのレンタルサーバーに向けて設定されているのか、
+チェックツールで正確に確認する方法もあります。
+確認するためのサイトがこちらです。
+</p>
+
+<p>
+<a href="http://dnscheck.jp/" target="_blank">DNS設定チェックツール</a>
+</p>
+
+<p>
+独自ドメインを入力して「検証」をクリックするだけで調べることができます。
+</p>
+
+
+
+
+<h2 id="ip" class="t40">DNS設定（各社のドメイン名まとめ）</h2>
+
+<p>
+各社の共有レンタルサーバーで用いるドメイン名をまとめています。
+</p>
+
+<p>
+ドメイン名は1台ごとではなく、会社のサービスごとに付与されるものなので、
+調べられないときはこちらの数値を確認してみてください。
+</p>
+
+
+
+<div class="spec">
+<table class="t10">
+
+  <tr>
+    <th class="hai" class="35%">会社名</th>
+    <td class="hai" class="65%">ドメイン名</th>
+  </tr>
+  
+
+  <tr>
+    <th><a href="server/xserver.html">エックスサーバー</a></td>
+    <td>ns1.xserver.jp<br>ns2.xserver.jp<br>ns3.xserver.jp<br>ns4.xserver.jp<br>ns5.xserver.jp</td>
+  </tr>
+
+    <th><a href="server/lolipop.html">ロリポップ</a></td>
+    <td>1uns01.lolipop.jp<br>uns02.lolipop.jp</td>
+  </tr>
+
+  <tr>
+    <th><a href="server/starserver.html">スターサーバー</a></td>
+    <td>ns1.star-domain.jp<br>ns2.star-domain.jp<br>ns3.star-domain.jp</td>
+  </tr>
+
+  <tr>
+    <th><a href="server/sakura.html">さくらレンタルサーバー</a></td>
+    <td>ns1.dns.ne.jp<br>ns2.dns.ne.jp</td>
+  </tr>
+
+  <tr>
+    <th><a href="server/heteml.html">ヘテムル</a></td>
+    <td>dns0.heteml.jp<br>dns1.heteml.jp</td>
+  </tr>
+
+  
+  <tr>
+    <th><a href="server/gmocloud.html">iCLUSTA+</a></td>
+    <td>ns.namedserver.net<br>ns2.namedserver.net</td>
+  </tr>
+
+ <tr>
+    <th><a href="server/cpi.html">ＣＰＩ</a></td>
+    <td>サポートへ確認</td>
+  </tr>
+
+
+</table>
+</div>
+
+
+
+
+
+<h2 id="kakusya" class="t40">DNS設定をもっと簡単にする</h2> 
+
+<h5>同じ運営元のレンタルサーバーとドメイン会社で契約するとかんたん設定ができる。</h5>
+
+<p>
+ネームサーバー設定がどうしても苦手な方には、より簡単に設定ができる方法もあります。
+</p>
+
+<p>
+それは「エックスサーバー」と「エックスドメイン」だったり、
+「ロリポップ」と「ムームードメイン」というように
+同じ会社が運営しているサーバーとドメイン会社をセットで契約をすると、
+大抵ワンクリックでネームサーバーの設定ができます。
+</p>
+
+<p>
+参照（※<a href="domain/index.html#unei">同じ運営元となるドメイン会社とレンタルサーバーまとめ</a>）
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share-buttons" data-source="simplesharingbuttons.com">
+   <div class=share-buttons-inner1><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+   <div class=share-buttons-inner2><a href="https://www.facebook.com/sharer.php?u={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-facebook">facebook</a></div>
+   <div class=share-buttons-inner3><a href="https://social-plugins.line.me/lineit/share?url={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-line">LINEで送る</a></div>
+   <div class=share-buttons-inner4><a href="https://getpocket.com/edit?url={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-pocket">Pocket</a></div>
+</div>
+
+
+
+
+
+<script>
+// ページの情報を得る
+let pageurl = window.location.href;
+let pagetitle = document.title;
+// ページ内のSNSシェアボタン用a要素を対象に処理
+let snsShareBtns = document.querySelectorAll(".snssharebtn");
+snsShareBtns.forEach(function(ssb) {
+	// href属性内のキーワードをURLエンコードした文字列に置換
+	let target = ssb.getAttribute('href');
+	target = target.replace('{{URL}}', encodeURIComponent(pageurl));
+	target = target.replace('{{TITLE}}', encodeURIComponent(pagetitle));
+	ssb.setAttribute('href', target);
+});
+function copyPageInfoToClipboard() {
+	navigator.clipboard.writeText(pagetitle + " " + pageurl);
+	alert('コピーしました！');
+}
+</script>
+
+
+<style>
+/* ▼各ボタン共通の装飾 */
+.snssharebtn {
+   display: inline-block;   /* インラインブロック化 */
+   background-color: #ccc;  /* 背景色 */
+   color: white !important;            /* 文字色 */
+   border-radius: 3px;      /* 角丸 */
+   line-height: 20px;       /* 行高 */
+   font-size: 12px;         /* 文字サイズ */
+   font-weight: bold;       /* 太字 */
+   padding: 0 0.75em;       /* 内側余白(上下→左右) */
+   text-decoration: none;   /* リンクの下線を消す */
+   vertical-align: super; /* 下端を揃える */
+}
+/* ▼各ボタンの配色 */
+.snsbtn-twitter { background-color: #1d9bf0; }
+.snsbtn-facebook { background-color: #1877f2; }
+.snsbtn-line { background-color: #00c300; }
+.snsbtn-hatenabookmark { background-color: #00a4de; }
+.snsbtn-pocket { background-color: #ef4256; }
+.snsbtn-copy { background-color: green; }
+</style>
+
+
+
+
+
+
+<div class="profile_title">
+   この記事の著者・プロフィール
+</div>
+
+<div class="profile">
+
+   <div class="profile_01">
+      <img src="img/profile_01.png">
+   </div>
+
+   <div class="profile_02">
+      <p>demiglaze</p>
+   </div>
+
+   <div class="profile_03">
+      <p>
+Web制作を始めて約19年になります（HTML/css、Photoshop、Webマーケティング）。2005年から当サイトの運営を開始。
+これまでに300個以上のドメインを取得、10社を超えるレンタルサーバーを利用してきました。
+      </p>
+      
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+
+
+<div class="main">
+
+
+<div class="best">
+
+
+
+<a href="server/xserver.html">
+<div class="best001">
+<p class="best-title"><span class="aka">第1位</span>　エックスサーバー</p>
+<p class="best-ad"><img src="image/side_xserver.png" alt="エックスサーバー" width="80px" height="40px"></p>
+<p class="best-content">
+<b>料金</b>　1,320円（1年払い1,100円）<br />
+<b>特徴</b>　国内シェアNo1<br />
+<b>魅力</b>　実稼働率が99.99％<br>
+　　　ページ表示速度も国内No1
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume001-->
+</a>
+
+
+<a href="server/shinserver.html">
+<div class="best003">
+<p class="best-title"><span class="aka">第2位</span>　シン・レンタルサーバー</p>
+<p class="best-ad"><img src="img/side_shinserver.jpg" alt="シンレンタルサーバー" width="80px" height="40px" style="border:1px solid #ccc;"></p>
+<p class="best-content">
+<b>料金</b>　990円（1年払い880円）<br />
+<b>特徴</b>　低価格で圧倒的なコスパ<br>
+<b>魅力</b>　初期費用0円<br>
+　　　独自ドメインも無料！
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume003-->
+</a>
+
+
+
+
+<a href="server/conoha.html">
+<div class="best001">
+<p class="best-title"><span class="aka">第3位</span>Conoha WING</p>
+<p class="best-ad"><img src="image/side_conoha.png" alt="ConohaWING" width="80px" height="40px" style="border:1px solid #ccc;"></p>
+<p class="best-content">
+<b>料金</b>　1,320円（1年払い891円）<br />
+<b>特徴</b>　サーバー国内最速No1！<br>
+<b>魅力</b>　初期費用＆契約月は無料<br>
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume001-->
+</a>
+
+
+
+</div><!--./best-->
+
+
+
+
+
+
+
+
+<div class="main002">
+<h2>ドメインの基礎</h2>
+</div>
+
+<div class="main-mokuzi">
+
+<table>
+  <tr>
+    <td width="50%"><a href="dokuzi-domain.html">ドメインとは？</a></td>
+    <td width="50%"><a href="domain-syurui.html">ドメインの種類</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="domain-meritto.html">メリット</a></td>
+    <td><a href="domain-demeritto.html">デメリット</a></td>
+  </tr>
+  <tr>
+    <td><a href="cost.html">料金体系</a></td>
+    <td><a href="dns.html">ネームサーバー設定</a></td>
+  </tr>  
+
+  <tr>
+    <td><a href="whois.html">whois情報</a></td>
+    <td><a href="multidomain.html">マルチドメイン</a></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><a href="domain/index.html">ドメイン7社比較</a></td>
+  </tr>
+ 
+
+</table>
+
+
+
+
+
+
+<div class="main002">
+<h2>レンタルサーバー比較</h2>
+</div>
+
+<table>
+
+<tr>
+    <td width="50%"><a href="server/cost.html">1.料金</a></td>
+    <td width="50%"><a href="kadou-ritu.html">2.稼働率</a></td>
+    </tr>
+    <tr>
+      <td><a href="cpu-memory.html">3.CPU＆メモリ</a></td>
+      <td><a href="web-server.html">4.webサーバー</a></td>
+    </tr>
+    <tr>
+      <td><a href="rentalserver-kakaku.html">5.データ容量</a></td>
+      <td><a href="wp-install.html">6.ワードプレス簡単インストール</a></td>
+    </tr>
+    <tr>
+      <td><a href="storage.html">7.HDD＆SSD</a></td>
+      <td><a href="taiou.html">8.サポート体制</a></td>
+    </tr>
+    <tr>
+    <td><a href="data-traffic.html">9.転送量</a></td>
+      <td><a href="backup.html">10.バックアップ</a></td>
+    </tr>
+      <td><a href="database.html">11.データベース数</a></td>
+      <td></td>
+    </tr>
+</table>
+
+</div><br>
+
+
+
+
+
+<div class="main002">
+<h2>特集</h2>
+</div>
+
+<div class="homepage-contents">
+<ul>
+<li><a href="onamae-mumu.html"><img src="img/onamae-muumuu.jpg" alt="お名前ドメイン＆ムームドメイン" ><span>お名前.com 対 ムームードメイン</span></a></li>
+<li><a href="server/xserver-conoha.html"><img src="img/xerver-conoha.jpg" alt="エックスサーバー conohawing"><span>エックスサーバー対ConohaWING</span></a></li>
+</ul>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+<script async src="../cse.google.com/fbc31.txt?cx=005580440322714431833:hhxa2exntga"></script>
+<div class="gcse-search"></div>
+
+
+</div><!---./main--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			
+
+
+
+<div id="line2"></div>
+
+<div id="footer"><!--ここから下段が始まります-->
+
+
+<div class="pc_only">
+<ul>
+<li><a href="sitepolicy.html">サイトポリシー</a></li>
+<li><a href="privacypolicy.html">プライバシーポリシー</a></li>
+<li><a href="otoiawase.html">お問合せ</a></li>
+</ul>
+</div>
+
+<p class="footer_siteimg mobile_only">
+ <img src="img/title_img01.png" alt="ドメイン取得への道">
+</p>
+
+
+<p style="font-size:12px;">
+Copyright(C) 2022 ドメイン取得への道 <span class="mobile_only"><br></span>.All Rights Reserved
+</p>
+
+
+</div><!--下段ここまで-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

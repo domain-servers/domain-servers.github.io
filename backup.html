@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="keywords" content="バックアップ,自動バックアップ,レンタルサーバー,復旧,データ保存,エックスサーバー">
+
+
+<title>レンタルサーバーの「自動バックアップ」サービスをわかりやすく説明</title>
+
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="style.css" type="text/css">
+
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="style-iphone.css" />
+<link rel="canonical" href="backup.html" />
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- Google tag (gtag.js) -->
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="index.html"><img src="img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="index.html"><img src="img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  
+
+<div class="pc_only">
+<nav id="navigation">
+    	<ul id="menu">
+				<li><a href="domain/index.html"><img src="img/navi_domain.png" height="40px" width="50px"><br><b>独自ドメイン</b><span>8社比較</span></a></li>
+				<li><a href="server/index.html"><img src="img/navi_server.png" height="40px" width="40px"><br><b>レンタルサーバー</b><span>17社比較</span></a></li>
+				<li><a href="wordpress/index.html"><img src="img/23003969.png" height="40px" width="60px"><br><b>ワードプレス</b><span>作り方＆使い方</span></a></li>
+				<li><a href="ec/index.html"><img src="img/navi_ec.png" height="40px" width="40px"><br><b>ECサイト構築</b><span>ASP比較</span></a></li>
+				<li><a href="website-builder/index.html"><img src="img/navi_homepage.png" height="40px" width="40px"><br><b>ウェブサイトビルダー</b><span>簡易Web作成ツール</span></a></li>
+
+			</ul>   
+</nav>
+</div>
+
+
+<div class="mobile_only">
+<nav id="navigation2">
+    	<ul id="menu">
+				<li><a href="domain/index.html"><img src="img/navi_domain.png" height="40px" width="50px"><br><b>独自ドメイン</b></a></li>
+				<li><a href="server/index.html"><img src="img/navi_server.png" height="40px" width="40px"><br><b>レンタル<br>サーバー</b></a></li>
+				<li><a href="wordpress/index.html"><img src="img/23003969.png" height="40px" width="60px"><br><b>ワードプレス</b></a></li>
+				<li><a href="mail/index.html"><img src="img/navi_mail.jpg" height="40px" width="50px"><br><b>メールアドレス</b></a></li>
+				<li><a href="website-builder/index.html"><img src="img/navi_homepage.png" height="50px" width="50px"><br><b>ウェブサイトビルダー</b></a></li>
+				<li><a href="ec/index.html"><img src="img/navi_ec.png" height="50px" width="50px"><br><b>ECサイト構築</b></a></li>
+				<li><a href="about/index.html"><img src="img/navi_app2.png" height="40px" width="40px"><br><b>キーワード解説</b></a></li>
+				<li><a href="blog/index.html"><img src="img/22962015.png" height="40px" width="40px"><br><b>ブログ</b></a></li>
+			</ul>   
+</nav>
+</div>
+
+<div id="panlist">
+<ul>
+<li><a href="index.html" title="ドメイン取得への道！">HOME</a> ＞</li>
+<li><a href="backup.html">自動バックアップ</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1>レンタルサーバーの<span class="aka">「<span class="aka">自動バックアップ</span>」</span>サービスをわかりやすく説明</h1>
+
+<p>
+レンタルサーバーの「自動バックアップサービス」」とは、ワードプレスやホームページといった
+<span class="ki">Webデータだけでなく、データベース、メールのデータを自動的に保存してくれる</span>サービスになります。
+</p>
+
+
+<p>
+この、バックアップされたデータがあることで、エラーによってワードプレスの画面が表示されなくなった場合や、
+パソコンにあるサイトデータを間違って削除した場合でも、データを戻すことが出来ます。
+</p>
+
+<h3>自動バックアップとはどんなサービスなのか？</h3>
+
+
+
+<h5 class="t25">データの保存領域は「Web」「メール」「データベース」の3つ</h5>
+
+<p>
+バックアップデータには「ＷＥＢ領域」「データベース領域」「メール領域」の３つの保存領域があります。
+</p>
+
+<p>
+ＷＥＢやデータベースについてはほぼ全てのレンタルサーバーで保存しています。
+</p>
+
+<p>
+ただし、メールデータについては「バックアップ外」となっているところもあります。
+会社用のメールサーバー用としてレンタルサーバーを借りる場合は、この辺りをよくチェックしてプランを選びましょう。
+</p>
+
+
+
+<h5>7日か14日分のデータを保存してくれるプランが多い</h5>
+
+
+<p>
+1日1回のバックアップで、7日分や14日分のデータを保存してくれる所が多くなっています。
+</p>
+
+<p>
+当サイトが紹介しているプランでは、「CPIレンタルサーバー」だけはバックアップ期間が30日分と長くなっています。
+これは、恐らくCPIが法人向けプランなのでデータ保護の期間を長くしているためだと思います。
+</p>
+
+
+<p>
+また会社によってはバックアップ期間を3世代前、7世代前というような言い方で表現していますが、
+これは1日1回のバックアップで7世代前までということであれば、7日前までのデータを遡って取得することが出来る。という意味になります。
+</p>
+
+<p>
+3日に1回のバックアップであれば、21日前までデータが保存されている。ということになります。
+</p>
+
+
+<h5>自動バックアップは無料が基本。一部は有料の場合も</h5>
+
+<p>
+バックアップデータを使う場合、無料でサービスを受けられる会社と有料になる会社に分かれます。
+</p>
+
+<p>
+有料の場合は「月額制」か「データ利用時に1回払い」など、それぞれ料金がかかる形が違います。
+</p>
+
+<p>
+以前は有料でサービスを提供していたプランが大半でしたが、最近では無料でサービスを受けられる所が増えてきています。
+</p>
+
+
+<h5>リストア作業（復旧）は簡単なのか？</h5>
+
+<p>
+実際に自動バックアップで保存されているデータを復元することをリストアと呼びますが、
+このリストア作業がどれくらい簡単にできるのか？というのも大切なポイントになります。
+</p>
+
+<p>
+リストア作業もエックスサーバーやConohaWINGなどのレンタルサーバーでは、
+管理画面から簡単にデータをもってこれるようになっています。
+</p>
+
+
+
+
+
+<h3 id="backup" class="t40">バックアップサービスの比較</h3><br>
+
+
+<div class="spec">
+	<table width="100%">
+
+	<tr>
+	<th class="hai" width="20%">会社</th>
+	<th class="hai" width="30%">日数</th>
+	<th class="hai" width="25%">領域</th>
+	<th class="hai" width="25%">料金</th>
+	</tr>
+	
+
+	<tr>
+	<th class="link"><a href="server/cpi.html">ＣＰＩ</a></th>
+	<td>30日分</td>
+	<td>web・DB</td>
+	<td>無料</td>
+	</tr>
+	
+	<tr>
+	<th class="link"><a href="server/conoha.html">Conoha Wing</a></th>
+	<td>14日分</td>
+	<td>Web、DB、メール</td>
+	<td>無料</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="server/xserver.html">エックスサーバー</a></th>
+	<td>14日分</td>
+	<td>web、DB、メール</td>
+	<td>無料</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="server/onamae-server.html">お名前レンタルサーバー</a></th>
+	<td>14日分</td>
+	<td>Web・DB・メール</td>
+	<td>無料</td>
+	</tr>
+	
+	<tr>
+		<th class="link"><a href="server/colorfulbox.html">カラフルボックス</a></th>
+		<td>14日分</td>
+		<td>web、DB</td>
+		<td>無料</td>
+		</tr>
+
+	<tr>
+	<th class="link"><a href="server/lolipop.html">ロリポップ</a></th>
+	<td>7日分</td>
+	<td>web、DB、メール</td>
+	<td>月額300円</td>
+	</tr>
+
+	<tr>
+	<th class="link"><a href="server/heteml.html">ヘテムル</a></th>
+	<td>7日分（Web、メール）<br>14日分（DB）</td>
+	<td>Web、DB、メール</td>
+	<td>1データ：5,500円</td>
+	</tr>
+
+	</table>
+</div>
+
+
+
+
+<h3 id="matome" class="t40">レンタルサーバーの比較10要素</h3>
+
+<p>
+プラン選びは自動バックアップサービス以外にも料金、スペック、サービスなど様々な要素が関わってきます。
+</p>
+
+<p>
+レンタルサーバーの比較要素として10つの要素をピックアップして、それぞれのページで解説しています。プラン選びの判断材料にして下さい。
+</p>
+
+<p>
+安定性を求める方は：「<a href="server/index.html#transfer">稼働率</a>」<br>
+料金が気になる方は：「<a href="server/cost.html">料金・コスト</a>」
+</p>
+
+
+
+<div class="server-hikaku t30">
+	<table>
+	
+	<tr>
+	<th class="mozi-naka" colspan="5">レンタルサーバーの比較</th>
+	</tr>
+	
+	<tr>
+  <td width="20%">１．<a href="server/index.html#transfer">稼働率</a></td>
+	<td width="20%">２．<a href="hdd-ssd.html#storage">ストレージ</a></td>
+	<td width="20%">３．<a href="wp-install.html#install">ＷＰ簡単インストール</a></td>
+	<td width="20%">４．<a href="taiou.html#taiou">コールセンター対応</a></td>
+	<td width="20%">５．<a href="database.html#database-hikaku">データベース数</a></td>
+	</tr>
+	
+	<tr>
+  <td>６．<a href="rentalserver-kakaku.html#youryou">容量</a></td>		
+	<td>７．<a href="cpu-memory.html#hikaku">CPU＆メモリ</a></td>
+	<td>８．<a href="web-server.html#webserver">webサーバー</a></td>
+	<td>９．<a href="backup.html#backup">自動バックアップ</a></td>
+	<td>10．<a href="data-traffic.html#hikaku">転送量</a></td>				
+	</tr>	
+	</table>
+</div>
+<br>
+
+
+
+
+
+
+
+<div class="share-buttons" data-source="simplesharingbuttons.com">
+   <div class=share-buttons-inner1><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+   <div class=share-buttons-inner2><a href="https://www.facebook.com/sharer.php?u={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-facebook">facebook</a></div>
+   <div class=share-buttons-inner3><a href="https://social-plugins.line.me/lineit/share?url={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-line">LINEで送る</a></div>
+   <div class=share-buttons-inner4><a href="https://getpocket.com/edit?url={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-pocket">Pocket</a></div>
+</div>
+
+
+
+
+
+<script>
+// ページの情報を得る
+let pageurl = window.location.href;
+let pagetitle = document.title;
+// ページ内のSNSシェアボタン用a要素を対象に処理
+let snsShareBtns = document.querySelectorAll(".snssharebtn");
+snsShareBtns.forEach(function(ssb) {
+	// href属性内のキーワードをURLエンコードした文字列に置換
+	let target = ssb.getAttribute('href');
+	target = target.replace('{{URL}}', encodeURIComponent(pageurl));
+	target = target.replace('{{TITLE}}', encodeURIComponent(pagetitle));
+	ssb.setAttribute('href', target);
+});
+function copyPageInfoToClipboard() {
+	navigator.clipboard.writeText(pagetitle + " " + pageurl);
+	alert('コピーしました！');
+}
+</script>
+
+
+<style>
+/* ▼各ボタン共通の装飾 */
+.snssharebtn {
+   display: inline-block;   /* インラインブロック化 */
+   background-color: #ccc;  /* 背景色 */
+   color: white !important;            /* 文字色 */
+   border-radius: 3px;      /* 角丸 */
+   line-height: 20px;       /* 行高 */
+   font-size: 12px;         /* 文字サイズ */
+   font-weight: bold;       /* 太字 */
+   padding: 0 0.75em;       /* 内側余白(上下→左右) */
+   text-decoration: none;   /* リンクの下線を消す */
+   vertical-align: super; /* 下端を揃える */
+}
+/* ▼各ボタンの配色 */
+.snsbtn-twitter { background-color: #1d9bf0; }
+.snsbtn-facebook { background-color: #1877f2; }
+.snsbtn-line { background-color: #00c300; }
+.snsbtn-hatenabookmark { background-color: #00a4de; }
+.snsbtn-pocket { background-color: #ef4256; }
+.snsbtn-copy { background-color: green; }
+</style>
+
+
+
+
+
+
+<div class="profile_title">
+   この記事の著者・プロフィール
+</div>
+
+<div class="profile">
+
+   <div class="profile_01">
+      <img src="img/profile_01.png">
+   </div>
+
+   <div class="profile_02">
+      <p>demiglaze</p>
+   </div>
+
+   <div class="profile_03">
+      <p>
+Web制作を始めて約19年になります（HTML/css、Photoshop、Webマーケティング）。2005年から当サイトの運営を開始。
+これまでに300個以上のドメインを取得、10社を超えるレンタルサーバーを利用してきました。
+      </p>
+      
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+<div class="main">
+
+
+<div class="main">
+
+
+<div class="best">
+
+
+
+<a href="server/xserver.html">
+<div class="best001">
+<p class="best-title"><span class="aka">第1位</span>　エックスサーバー</p>
+<p class="best-ad"><img src="image/side_xserver.png" alt="エックスサーバー" width="80px" height="40px"></p>
+<p class="best-content">
+<b>料金</b>　1,320円（1年払い1,100円）<br />
+<b>特徴</b>　国内シェアNo1<br />
+<b>魅力</b>　実稼働率が99.99％<br>
+　　　ページ表示速度も国内No1
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume001-->
+</a>
+
+
+<a href="server/shinserver.html">
+<div class="best003">
+<p class="best-title"><span class="aka">第2位</span>　シン・レンタルサーバー</p>
+<p class="best-ad"><img src="img/side_shinserver.jpg" alt="シンレンタルサーバー" width="80px" height="40px" style="border:1px solid #ccc;"></p>
+<p class="best-content">
+<b>料金</b>　990円（1年払い880円）<br />
+<b>特徴</b>　低価格で圧倒的なコスパ<br>
+<b>魅力</b>　初期費用0円<br>
+　　　独自ドメインも無料！
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume003-->
+</a>
+
+
+
+
+<a href="server/conoha.html">
+<div class="best001">
+<p class="best-title"><span class="aka">第3位</span>Conoha WING</p>
+<p class="best-ad"><img src="image/side_conoha.png" alt="ConohaWING" width="80px" height="40px" style="border:1px solid #ccc;"></p>
+<p class="best-content">
+<b>料金</b>　1,320円（1年払い891円）<br />
+<b>特徴</b>　サーバー国内最速No1！<br>
+<b>魅力</b>　初期費用＆契約月は無料<br>
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume001-->
+</a>
+
+
+
+</div><!--./best-->
+
+
+
+
+
+
+
+
+<div class="main002">
+<h2>ドメインの基礎</h2>
+</div>
+
+<div class="main-mokuzi">
+
+<table>
+  <tr>
+    <td width="50%"><a href="dokuzi-domain.html">ドメインとは？</a></td>
+    <td width="50%"><a href="domain-syurui.html">ドメインの種類</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="domain-meritto.html">メリット</a></td>
+    <td><a href="domain-demeritto.html">デメリット</a></td>
+  </tr>
+  <tr>
+    <td><a href="cost.html">料金体系</a></td>
+    <td><a href="dns.html">ネームサーバー設定</a></td>
+  </tr>  
+
+  <tr>
+    <td><a href="whois.html">whois情報</a></td>
+    <td><a href="multidomain.html">マルチドメイン</a></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><a href="domain/index.html">ドメイン7社比較</a></td>
+  </tr>
+ 
+
+</table>
+
+
+
+
+
+
+<div class="main002">
+<h2>レンタルサーバー比較</h2>
+</div>
+
+<table>
+
+<tr>
+    <td width="50%"><a href="server/cost.html">1.料金</a></td>
+    <td width="50%"><a href="kadou-ritu.html">2.稼働率</a></td>
+    </tr>
+    <tr>
+      <td><a href="cpu-memory.html">3.CPU＆メモリ</a></td>
+      <td><a href="web-server.html">4.webサーバー</a></td>
+    </tr>
+    <tr>
+      <td><a href="rentalserver-kakaku.html">5.データ容量</a></td>
+      <td><a href="wp-install.html">6.ワードプレス簡単インストール</a></td>
+    </tr>
+    <tr>
+      <td><a href="storage.html">7.HDD＆SSD</a></td>
+      <td><a href="taiou.html">8.サポート体制</a></td>
+    </tr>
+    <tr>
+    <td><a href="data-traffic.html">9.転送量</a></td>
+      <td><a href="backup.html">10.バックアップ</a></td>
+    </tr>
+      <td><a href="database.html">11.データベース数</a></td>
+      <td></td>
+    </tr>
+</table>
+
+</div><br>
+
+
+
+
+
+<div class="main002">
+<h2>特集</h2>
+</div>
+
+<div class="homepage-contents">
+<ul>
+<li><a href="onamae-mumu.html"><img src="img/onamae-muumuu.jpg" alt="お名前ドメイン＆ムームドメイン" ><span>お名前.com 対 ムームードメイン</span></a></li>
+<li><a href="server/xserver-conoha.html"><img src="img/xerver-conoha.jpg" alt="エックスサーバー conohawing"><span>エックスサーバー対ConohaWING</span></a></li>
+</ul>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+<script async src="../cse.google.com/fbc31.txt?cx=005580440322714431833:hhxa2exntga"></script>
+<div class="gcse-search"></div>
+
+
+</div><!---./main--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			
+
+
+
+<div id="line2"></div>
+
+<div id="footer"><!--ここから下段が始まります-->
+
+
+<div class="pc_only">
+<ul>
+<li><a href="sitepolicy.html">サイトポリシー</a></li>
+<li><a href="privacypolicy.html">プライバシーポリシー</a></li>
+<li><a href="otoiawase.html">お問合せ</a></li>
+</ul>
+</div>
+
+<p class="footer_siteimg mobile_only">
+ <img src="img/title_img01.png" alt="ドメイン取得への道">
+</p>
+
+
+<p style="font-size:12px;">
+Copyright(C) 2022 ドメイン取得への道 <span class="mobile_only"><br></span>.All Rights Reserved
+</p>
+
+
+</div><!--下段ここまで-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

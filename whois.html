@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="keywords" content="whois情報,whois情報とは,ドメイン,公開代理,検索,変更,正確性確認">
+
+<title>whois情報とは？個人情報を出さない設定方法・調べ方＆を解説</title>
+
+<link rel="stylesheet" media="screen and (min-width: 641px)" href="style.css" type="text/css">
+<link rel="stylesheet" media="screen and (max-width: 640px)" href="style-iphone.css" />
+<link rel="canonical" href="whois.html" />
+
+
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "blogposting",
+	  "headline": "whois情報とは？検索方法、変更、正確性確認について",
+	  "image":        "https://www.domain-server-study.com/img/main-img-domain.jpg" ,
+	  "datePublished": "2018/04/06",
+	  "dateModified": "2022/08/02", 
+	  "author": {     "@type": "Person",
+					  "name": "daiji kondo",
+					  "url": "https://www.domain-server-study.com/profile.html"  }
+	}
+  </script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- Google tag (gtag.js) -->
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!--ここから上段部分が始まります-->  <div id="headder">
+
+    <div class="pc_title pc_only">
+      <a href="index.html"><img src="img/title_img01.png" alt="ドメイン取得への道" width="400px"></a>
+    </div>
+      <p class="mobile_only"><a href="index.html"><img src="img/main.png" alt="ドメイン取得への道" width="100%"></a></p>
+    
+  </div>
+  
+
+<div class="pc_only">
+<nav id="navigation">
+    	<ul id="menu">
+				<li><a href="domain/index.html"><img src="img/navi_domain.png" height="40px" width="50px"><br><b>独自ドメイン</b><span>8社比較</span></a></li>
+				<li><a href="server/index.html"><img src="img/navi_server.png" height="40px" width="40px"><br><b>レンタルサーバー</b><span>17社比較</span></a></li>
+				<li><a href="wordpress/index.html"><img src="img/23003969.png" height="40px" width="60px"><br><b>ワードプレス</b><span>作り方＆使い方</span></a></li>
+				<li><a href="ec/index.html"><img src="img/navi_ec.png" height="40px" width="40px"><br><b>ECサイト構築</b><span>ASP比較</span></a></li>
+				<li><a href="website-builder/index.html"><img src="img/navi_homepage.png" height="40px" width="40px"><br><b>ウェブサイトビルダー</b><span>簡易Web作成ツール</span></a></li>
+
+			</ul>   
+</nav>
+</div>
+
+
+<div class="mobile_only">
+<nav id="navigation2">
+    	<ul id="menu">
+				<li><a href="domain/index.html"><img src="img/navi_domain.png" height="40px" width="50px"><br><b>独自ドメイン</b></a></li>
+				<li><a href="server/index.html"><img src="img/navi_server.png" height="40px" width="40px"><br><b>レンタル<br>サーバー</b></a></li>
+				<li><a href="wordpress/index.html"><img src="img/23003969.png" height="40px" width="60px"><br><b>ワードプレス</b></a></li>
+				<li><a href="mail/index.html"><img src="img/navi_mail.jpg" height="40px" width="50px"><br><b>メールアドレス</b></a></li>
+				<li><a href="website-builder/index.html"><img src="img/navi_homepage.png" height="50px" width="50px"><br><b>ウェブサイトビルダー</b></a></li>
+				<li><a href="ec/index.html"><img src="img/navi_ec.png" height="50px" width="50px"><br><b>ECサイト構築</b></a></li>
+				<li><a href="about/index.html"><img src="img/navi_app2.png" height="40px" width="40px"><br><b>キーワード解説</b></a></li>
+				<li><a href="blog/index.html"><img src="img/22962015.png" height="40px" width="40px"><br><b>ブログ</b></a></li>
+			</ul>   
+</nav>
+</div>
+
+<div id="panlist">
+<ul>
+<li><a href="index.html" title="ドメイン取得への道！">Topページに戻る</a> ＞</li>
+<li><a href="whois.html">whois情報とは？</a></li>
+</ul>
+</div>
+
+</div><!--上段ここまで-->
+
+
+
+<!--ここから中段が始まります--><div id="container">
+<!--ここから中段の左ＢＯＸが始まります--><div id="left-box">
+
+
+
+
+<h1><span class="aka">whois情報とは？</span>個人情報を出さない設定方法、Whoisの調べ方を解説</h1>
+
+<p class="center">
+<img src="image/whois.jpg" alt="whois情報">
+</p>
+
+<h3>Whois情報とは？</h3> 
+
+<h5>独自ドメインを持つと「登録情報」を開示されてしまう</h5>
+
+<p>
+独自ドメインを登録するとドメインの「登録年月日」や「有効期限」などが開示されることになります。
+またメールアドレス、氏名、会社名、ドメイン名なども開示されます。これらの開示される情報のことを「whois情報」と呼びます。
+</p>
+
+<p>
+内容が「登録年月日」や「有効期限」だけであれば気にする人はいないのかもしれませんが、
+その他にも「名前、メールアドレス、電話番号」といった個人情報、会社情報に関することまで開示されてしまいます。
+</p>
+
+
+
+<h5>whois情報は誰でも調べることが出来る</h5>
+
+<p>
+このwhois情報は、実は誰でも簡単に調べられます。Whois情報が検索できるサイトで独自ドメイン名を入力して検索するだけで調べることが出来ます。
+</p>
+
+<p>
+調べるには料金もかかりませんし、大きなドメイン会社であればWhois情報の検索用ページを作っているので、本当に誰でも調べられる状態になっています。
+</p>
+
+
+
+
+
+
+
+<h5>Whois情報で開示される情報</h5>
+
+<p>
+開示される情報は以下のとうりです。
+</p>
+
+<div class="box">
+
+<blockquote>
+<ul>
+<li> 登録ドメイン名</li>
+<li>レジストラ名</li>
+<li> 登録ドメイン名のプライマリおよびセカンダリネームサーバ</li>
+<li>ドメイン名の登録年月日</li>
+<li>ドメイン名の有効期限</li>
+<li>ドメイン名登録者の名前およびアドレス</li>
+<li>技術的な連絡の担当者の名前、アドレス、電子メールアドレス、電話番号</li>
+<li>登録に関する連絡の担当者の名前、アドレス、電子メールアドレス、電話番号</li>
+</ul>
+</blockquote>
+
+<p class="center">
+<a href="http://jprs.jp/about/dom-search/whois/" target="_blank">Whoisで提供される情報（※株式会社日本レジストリサービス）</a>
+</p>
+</div>
+
+
+
+
+
+
+
+
+<h3>Whois情報の開示は阻止できる！</h3>
+
+<p>
+Whois情報では<span class="aka">個人情報が開示されてしまうことになる</span>ため、
+多くのレンタルサーバーでは「whois情報変更サービス」と呼ばれるサービスがあって、
+氏名、電話番号、メールアドレスなどの<span class="aka">Whois情報をドメイン会社名義に変更してくれます</span>。
+</p>
+
+<p>
+  つまりドメイン登録時（またはその後に）変更設定を行えば、自分の個人情報が開示されることはありません。
+  </p>
+
+
+<h5>Whoisの変更設定は簡単にできる</h5>
+
+<p>
+  Whois情報の変更はドメイン登録時に申込みをすることが出来ます。また登録後に行うことも出来ます。
+</p>
+<p>
+  変更依頼もとても簡単になっていて、基本的にはボタンをクリックするだけでドメイン会社のWhois情報に変更することが出来ます。
+</p>
+
+
+
+<h5>jpドメインなどではWhois情報が一部変更できないケースもある</h5>
+
+<p>
+　どのドメインもWhois情報が変更できるのかと言ったらそうではありません。
+「jp」ドメインについては一部の登録事業者では「氏名」だけについては変更できないようになっています。
+</p>
+
+
+
+
+<h3>Whois情報にかかる料金</h3>
+
+<p>
+このWhois情報変更についてはドメイン事業者によって無料の会社と有料の会社にわかれます。
+それぞれ、どんな会社があるのか紹介していきましょう。
+</p>
+
+<h5>0円で変更できるドメイン事業者</h5>
+
+<p>
+  基本的に多くのドメイン事業者ではwhois情報は無料で変更できます。
+「ムームードメイン」「エックスドメイン」「スタードメイン」については0円でWhois情報を変更できます。
+</p>
+
+<p>
+  whois情報の変更についても、ドメイン登録時だけでなく登録後いつでも変更をかけれます。
+</p>
+
+
+
+<h5>有料になる事業者</h5>
+
+<p>
+  Whois情報の変更が有料になるドメイン事業者としては「お名前ドメイン」「WIX」などがあります。
+</p>
+
+<p>
+  ただし、お名前ドメインはドメイン登録時にドメイン設定すれば0円でWhois変更ができます。
+  登録時に申請しない場合はWohis変更に年間980円ほど料金がかかります。
+</p>
+
+
+
+
+
+
+<h2 class="t50">Whois情報の検索方法</h2> 
+
+<p>
+  ここからはWhois情報の調べ方について説明していきます。
+</p>
+
+<p>
+  Whois情報はドメイン会社などで作成している専用ページで調べることが出来ます。以下はお名前ドメインで提供しているWhois情報のページになります。
+</p>
+
+
+<ul>
+  <li><a href="https://www.onamae.com/service/whois/" target="_blank">Whois検索ページ（お名前ドメイン）</a></li>
+</ul>
+
+
+<h5>（１）専用ページで独自ドメインを正しく入れるだけで検索できる</h5>
+
+<p>
+調べる場合、検索欄に独自ドメインを入れます。この時、独自ドメイン以外の部分は一緒に入れないように注意しましょう。
+「https://www.」の部分や最後のスラッシュ「/」は省いて検索します。
+</p>
+
+<p>
+  当サイトのURLで調べる場合であれば、黄色になっている部分だけをコピぺして、検索してください。
+  </p>
+
+<p>
+「https://www.<span class="ki">domain-server-study.com</span>/」
+</p>
+
+
+
+<p class="center">
+<img src="img/whois_search.png" width="600px" alt="whois情報を検索">
+</p>
+
+
+
+
+
+<h5>（２）検索結果を確認する方法</h5>
+
+<p>
+Whois情報の検索結果は英語で表示されます。どのような情報が載っているのか説明します。
+</p>
+
+
+
+
+<p class="center">
+<img src="img/whois_result_01.png" width="600px" alt="whois情報の結果">
+<img src="img/whois_result_02.png" width="600px" alt="whois情報の結果">
+</p>
+
+
+<p>
+基本的には上記の表のようにWhois情報が表示されます。
+</p>
+  
+
+
+
+<div class="box">
+  <ul>
+  <li><span class="midori">Domain Name：</span>（ドメイン名）</li>
+  <li><span class="midori">Creation Date：</span>（ドメイン登録日）</li>
+  <li><span class="midori">Registrar ～：</span>（所有者の情報各種）</li>
+  <li><span class="midori">Admin ～：</span>（管理担当の情報各種）</li>
+  <li><span class="midori">Name Server：</span>（ネームサーバー情報）</li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="share-buttons" data-source="simplesharingbuttons.com">
+   <div class=share-buttons-inner1><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="../platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+   <div class=share-buttons-inner2><a href="https://www.facebook.com/sharer.php?u={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-facebook">facebook</a></div>
+   <div class=share-buttons-inner3><a href="https://social-plugins.line.me/lineit/share?url={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-line">LINEで送る</a></div>
+   <div class=share-buttons-inner4><a href="https://getpocket.com/edit?url={{URL}}" target="_blank" rel="nofollow noopener" class="snssharebtn snsbtn-pocket">Pocket</a></div>
+</div>
+
+
+
+
+
+<script>
+// ページの情報を得る
+let pageurl = window.location.href;
+let pagetitle = document.title;
+// ページ内のSNSシェアボタン用a要素を対象に処理
+let snsShareBtns = document.querySelectorAll(".snssharebtn");
+snsShareBtns.forEach(function(ssb) {
+	// href属性内のキーワードをURLエンコードした文字列に置換
+	let target = ssb.getAttribute('href');
+	target = target.replace('{{URL}}', encodeURIComponent(pageurl));
+	target = target.replace('{{TITLE}}', encodeURIComponent(pagetitle));
+	ssb.setAttribute('href', target);
+});
+function copyPageInfoToClipboard() {
+	navigator.clipboard.writeText(pagetitle + " " + pageurl);
+	alert('コピーしました！');
+}
+</script>
+
+
+<style>
+/* ▼各ボタン共通の装飾 */
+.snssharebtn {
+   display: inline-block;   /* インラインブロック化 */
+   background-color: #ccc;  /* 背景色 */
+   color: white !important;            /* 文字色 */
+   border-radius: 3px;      /* 角丸 */
+   line-height: 20px;       /* 行高 */
+   font-size: 12px;         /* 文字サイズ */
+   font-weight: bold;       /* 太字 */
+   padding: 0 0.75em;       /* 内側余白(上下→左右) */
+   text-decoration: none;   /* リンクの下線を消す */
+   vertical-align: super; /* 下端を揃える */
+}
+/* ▼各ボタンの配色 */
+.snsbtn-twitter { background-color: #1d9bf0; }
+.snsbtn-facebook { background-color: #1877f2; }
+.snsbtn-line { background-color: #00c300; }
+.snsbtn-hatenabookmark { background-color: #00a4de; }
+.snsbtn-pocket { background-color: #ef4256; }
+.snsbtn-copy { background-color: green; }
+</style>
+
+
+
+
+
+
+<div class="profile_title">
+   この記事の著者・プロフィール
+</div>
+
+<div class="profile">
+
+   <div class="profile_01">
+      <img src="img/profile_01.png">
+   </div>
+
+   <div class="profile_02">
+      <p>demiglaze</p>
+   </div>
+
+   <div class="profile_03">
+      <p>
+Web制作を始めて約19年になります（HTML/css、Photoshop、Webマーケティング）。2005年から当サイトの運営を開始。
+これまでに300個以上のドメインを取得、10社を超えるレンタルサーバーを利用してきました。
+      </p>
+      
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+</div><!--左ＢＯＸここまで-->
+
+
+
+
+
+<!--ここからサイドバーが始まります--><div id="right-box">
+
+<div class="main">
+
+
+<div class="best">
+
+
+
+<a href="server/xserver.html">
+<div class="best001">
+<p class="best-title"><span class="aka">第1位</span>　エックスサーバー</p>
+<p class="best-ad"><img src="image/side_xserver.png" alt="エックスサーバー" width="80px" height="40px"></p>
+<p class="best-content">
+<b>料金</b>　1,320円（1年払い1,100円）<br />
+<b>特徴</b>　国内シェアNo1<br />
+<b>魅力</b>　実稼働率が99.99％<br>
+　　　ページ表示速度も国内No1
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume001-->
+</a>
+
+
+<a href="server/shinserver.html">
+<div class="best003">
+<p class="best-title"><span class="aka">第2位</span>　シン・レンタルサーバー</p>
+<p class="best-ad"><img src="img/side_shinserver.jpg" alt="シンレンタルサーバー" width="80px" height="40px" style="border:1px solid #ccc;"></p>
+<p class="best-content">
+<b>料金</b>　990円（1年払い880円）<br />
+<b>特徴</b>　低価格で圧倒的なコスパ<br>
+<b>魅力</b>　初期費用0円<br>
+　　　独自ドメインも無料！
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume003-->
+</a>
+
+
+
+
+<a href="server/conoha.html">
+<div class="best001">
+<p class="best-title"><span class="aka">第3位</span>Conoha WING</p>
+<p class="best-ad"><img src="image/side_conoha.png" alt="ConohaWING" width="80px" height="40px" style="border:1px solid #ccc;"></p>
+<p class="best-content">
+<b>料金</b>　1,320円（1年払い891円）<br />
+<b>特徴</b>　サーバー国内最速No1！<br>
+<b>魅力</b>　初期費用＆契約月は無料<br>
+</p>
+<p class="best-syousai">→解説ページへ</p>
+</div><!--./osusume001-->
+</a>
+
+
+
+</div><!--./best-->
+
+
+
+
+
+
+
+
+<div class="main002">
+<h2>ドメインの基礎</h2>
+</div>
+
+<div class="main-mokuzi">
+
+<table>
+  <tr>
+    <td width="50%"><a href="dokuzi-domain.html">ドメインとは？</a></td>
+    <td width="50%"><a href="domain-syurui.html">ドメインの種類</a></td>
+  </tr>
+
+  <tr>
+    <td><a href="domain-meritto.html">メリット</a></td>
+    <td><a href="domain-demeritto.html">デメリット</a></td>
+  </tr>
+  <tr>
+    <td><a href="cost.html">料金体系</a></td>
+    <td><a href="dns.html">ネームサーバー設定</a></td>
+  </tr>  
+
+  <tr>
+    <td><a href="whois.html">whois情報</a></td>
+    <td><a href="multidomain.html">マルチドメイン</a></td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><a href="domain/index.html">ドメイン7社比較</a></td>
+  </tr>
+ 
+
+</table>
+
+
+
+
+
+
+<div class="main002">
+<h2>レンタルサーバー比較</h2>
+</div>
+
+<table>
+
+<tr>
+    <td width="50%"><a href="server/cost.html">1.料金</a></td>
+    <td width="50%"><a href="kadou-ritu.html">2.稼働率</a></td>
+    </tr>
+    <tr>
+      <td><a href="cpu-memory.html">3.CPU＆メモリ</a></td>
+      <td><a href="web-server.html">4.webサーバー</a></td>
+    </tr>
+    <tr>
+      <td><a href="rentalserver-kakaku.html">5.データ容量</a></td>
+      <td><a href="wp-install.html">6.ワードプレス簡単インストール</a></td>
+    </tr>
+    <tr>
+      <td><a href="storage.html">7.HDD＆SSD</a></td>
+      <td><a href="taiou.html">8.サポート体制</a></td>
+    </tr>
+    <tr>
+    <td><a href="data-traffic.html">9.転送量</a></td>
+      <td><a href="backup.html">10.バックアップ</a></td>
+    </tr>
+      <td><a href="database.html">11.データベース数</a></td>
+      <td></td>
+    </tr>
+</table>
+
+</div><br>
+
+
+
+
+
+<div class="main002">
+<h2>特集</h2>
+</div>
+
+<div class="homepage-contents">
+<ul>
+<li><a href="onamae-mumu.html"><img src="img/onamae-muumuu.jpg" alt="お名前ドメイン＆ムームドメイン" ><span>お名前.com 対 ムームードメイン</span></a></li>
+<li><a href="server/xserver-conoha.html"><img src="img/xerver-conoha.jpg" alt="エックスサーバー conohawing"><span>エックスサーバー対ConohaWING</span></a></li>
+</ul>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+<script async src="../cse.google.com/fbc31.txt?cx=005580440322714431833:hhxa2exntga"></script>
+<div class="gcse-search"></div>
+
+
+</div><!---./main--->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--右ＢＯＸここまで-->
+</div><!--中段ここまで-->
+
+
+			
+
+
+
+<div id="line2"></div>
+
+<div id="footer"><!--ここから下段が始まります-->
+
+
+<div class="pc_only">
+<ul>
+<li><a href="sitepolicy.html">サイトポリシー</a></li>
+<li><a href="privacypolicy.html">プライバシーポリシー</a></li>
+<li><a href="otoiawase.html">お問合せ</a></li>
+</ul>
+</div>
+
+<p class="footer_siteimg mobile_only">
+ <img src="img/title_img01.png" alt="ドメイン取得への道">
+</p>
+
+
+<p style="font-size:12px;">
+Copyright(C) 2022 ドメイン取得への道 <span class="mobile_only"><br></span>.All Rights Reserved
+</p>
+
+
+</div><!--下段ここまで-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
